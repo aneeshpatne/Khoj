@@ -1,0 +1,7 @@
+CREATE TABLE products (
+id SERIAL PRIMARY KEY,
+name TEXT NOT NULL,
+description TEXT,
+price INT NOT NULL,
+in_stock BOOLEAN NOT NULL DEFAULT true
+)
