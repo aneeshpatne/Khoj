@@ -39,6 +39,7 @@ services:
       - dev-container
       - --smp
       - "1"
+      - --check=false
     ports:
       - "19092:19092" # Kafka (external)
       - "18081:18081" # Schema Registry
@@ -75,4 +76,4 @@ services:
             enabled: true
             urls: ["http://redpanda-0:9644"]
     ports:
-      - "8080:8080"
+      - "8090:8080"
